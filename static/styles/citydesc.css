@@ -1,0 +1,367 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+  font-size: 2.5rem;
+  color:#8D1022;
+}
+
+  
+  /* Navbar container */
+.navbar {
+    position: absolute;
+    background-color: #f8f9fa;
+    padding: 2rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 80%;
+    width: 95.7vw;
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  /* Brand Name */
+.navbar-brand {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #df3939;
+    text-decoration: none;
+}
+  
+  /* Navigation links */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-link {
+    margin-left: 5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+}
+  
+.nav-link:hover {
+    color: #007bff;
+}
+  
+  /* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+  
+.search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+  
+.search-button {
+    padding: 0.5rem 1rem;
+    background-color: #8D1022;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.search-button:hover {
+    background-color: #218838;
+}
+
+.cityimage { 
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   padding-bottom:100px ;
+   height: 90vh;
+   background-repeat: no-repeat;
+   background-size: 100% 780px; 
+   
+}
+.cityimage h2{
+    font-size: 3rem;
+    color:#fcfcfc; 
+    text-align: center; 
+    width: 900px; 
+}
+
+.history,.historydesc,.attractions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h3{
+    font-size: 2.5rem;
+    color:#8D1022;
+}
+
+.historydesc{
+    padding-top: 1.9rem;
+    width: 100%;
+    text-align: center;
+}
+
+.desc{
+    width: 1000px;
+    font-size: 1.6rem;
+}
+
+.attractions{
+    font-size: 2.5rem;
+    padding-top: 10rem;
+}
+
+.box3{
+    padding-top:3rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+}
+
+.box1{
+    border: none;
+    border-radius: 1.2rem;
+    background-color: rgb(141, 16, 34, 40%);
+    width: 750px;
+    height: 390px;
+    color:white;
+}
+
+
+.box1image{
+    position: absolute;
+    left: 430px;
+    height: 300px;
+    width: 450px;
+}
+
+.attractions{
+    color:#8D1022;
+    
+}
+body, html {
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 16px;
+  }
+  
+  .siteTitle {
+    display: block;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 20px 0;
+    
+    @include media {
+      font-size: 60px;
+    }
+  }
+header,
+  main,
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  
+  .card {
+    height: 400px;
+    position: relative;
+    padding: 20px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 4px solid #b0215e;
+    margin-bottom: 20px;
+    background-image: url('/static/images/rect.png');
+    background-size: cover;
+    
+    @include media {
+      height: 500px;
+    }
+  }
+  
+  .inner {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: white;
+    box-sizing: border-box;
+    padding: 40px;
+    
+    @include media {
+      width: 50%;
+      height: 100%;
+    }
+  }
+  
+  .title {
+    font-size: 24px;
+    color: black;  
+    text-align: center;
+    font-weight: 700;
+    color: #181818;
+    text-shadow: 0px 2px 2px #a6f8d5;
+    position: relative;
+    margin: 0 0 20px 0;
+    
+    @include media {
+      font-size: 30px;
+    }
+  }
+  
+  .subtitle {
+    color: #b0215e;
+    text-align: center;
+  }
+  
+  .card-container {
+            display: flex;
+            justify-content: center; /* Center the cards in the container */
+            gap: 20px; /* Optional gap between cards */
+            padding: 20px; /* Add some padding to the container */
+        }
+
+        /* Card styling */
+        .card {
+            
+        }
+
+        .card img {
+            width: 100%; /* Ensure the image fits the card width */
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+            text-align: center; /* Center align the text */
+        }
+
+.maincard{
+    position: relative;
+    width: 90vw;
+    padding-top: 30px;
+    padding-left: 160px;
+}
+
+.card2{
+    width: 1000px;
+    background-image: url(/static/images/rect.png);
+    border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 18rem;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards in the container */
+    gap: 20px; /* Optional gap between cards */
+    padding: 20px; /* Add some padding to the container */
+}
+
+/* Card styling */
+.card-container{
+    gap: 100px;
+}
+.card1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 18rem;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card1 img {
+    width: 100%; /* Ensure the image fits the card width */
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    text-align: center; /* Center align the text */
+}
+
+.explore{
+    padding-top: 70px;
+    align-items: center;
+    text-align: center;
+    color: #28a745;
+}
+
+.funfacts h3{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+  font-size: 2.5rem;
+  color:#8D1022;
+  padding:50px;
+}
+.points{
+
+  width: 1600px;
+  padding-left: 350px;
+  padding-bottom: 100px;
+ 
+    
+}
+.point{
+  color:black;
+  font-size: 22px;
+  padding:10px;
+}
+
+.calander{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.calc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events{
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list{
+    font-size: 2.5rem;
+      color:#8D1022;
+  
+  text-align: center;
+}
+
+.list1{
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calc h3{
+  font-size: 2.5rem;
+      color:#8D1022;
+}

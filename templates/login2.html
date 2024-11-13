@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/static/styles/login.css">
+</head>
+<body>
+    <div class="bg"></div>
+      <div class="container">
+          <div class="login-box">
+              <h2>Echoes of India</h2>
+              <form id="login-form">
+                    <input type="text" id="email" name="confirm" placeholder="Enter Email" required>
+                  <input type="text" id="confirmpassword" name="confirmpassword" placeholder="Enter OTP" required>
+                  <button type="button" id="verify-otp">Confirm</button>
+              </form>
+              <div id="result"></div>
+          </div>
+      </div>
+    <script>
+        document.getElementById('verify-otp').addEventListener('click', function () {
+                const otp = document.getElementById('confirmpassword').value;
+                const email = document.getElementById('email').value;
+                // Verify OTP request
+                fetch('/login2', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ email, otp })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.message) {
+                            document.getElementById('result').innerText = 'OTP verified. You are logged in!';
+                        } else {
+                            document.getElementById('result').innerText = 'Invalid OTP. Please try again.';
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+    </script>
+</body>
+</html>

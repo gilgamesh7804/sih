@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <!-- Brand Name -->
+          <a class="navbar-brand" href="#">Echoes of INDIA</a>
+    
+          <!-- Navigation Links -->
+          <div class="navbar-right">
+            <a class="nav-link" href="/citylist">Explore</a>
+            <a class="nav-link" href="/chatbot">Chatbot</a>
+            <a class="nav-link" href="/login">Login</a>
+    
+            <!-- Search Bar -->
+            <form class="search-form">
+              <input type="text" class="search-input" placeholder="Search">
+              <button class="search-button" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <video src="/static/405.mp4" autoplay muted></video>
+    <div class="line"></div>
+
+    <div class="container1">
+      <!-- Left Text Section -->
+      <div class="text-section" id="leftText">
+        <h1 style="color: #8d1022;">Delhi</h1>
+        <p>A bustling metropolis where ancient history and modern vibrancy intersect.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet optio nisi facilis magni cupiditate minus officiis. Itaque omnis sed in.</p>
+        <a href="/city/delhi" class="button">KNOW MORE</a>
+      </div>
+  
+      <!-- Right Slider Section -->
+      <div class="slider-section">
+        <div class="slider">
+          <button class="slider-arrow" onclick="previousSlide()">&#10094;</button>
+          <div class="slider-item active">
+            <img src="/static/images/home/images/delhi.jpg" alt="Delhi">
+             </div>
+          <div class="slider-item">
+           <img src="/static/images/home/images/rishikesh.jpg" alt="rishikesh">
+          </div>
+          <div class="slider-item">
+           <img src="/static/images/home/images/amritsar.jpg" alt="amritsar">
+          </div>
+          <div class="slider-item">
+            <img src="/static/images/home/images/hidden.jpg" alt="Hidden">
+           </div>
+           
+        </div>
+
+          <button class="slider-arrow" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    <div class="culture"><div class="heading">Witness the culture and tradition <br>of INDIA</div>
+
+
+    
+    <!-- Tab Bar -->
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tablinks" onclick="openCategory(event, 'Art')" id="defaultOpen">Art</button>
+            <button class="tablinks" onclick="openCategory(event, 'Music')">Music</button>
+            <button class="tablinks" onclick="openCategory(event, 'Dance')">Dance</button>
+            <button class="tablinks" onclick="openCategory(event, 'Food')">Food</button>
+            <button class="tablinks" onclick="openCategory(event, 'Festival')">Festival</button>
+            <button class="tablinks" onclick="openCategory(event, 'Apparel')">Apparel</button>
+        </div>
+    </div>
+    
+    <!-- Tab Content with 6 Images per Tab -->
+    <div id="Art" class="tabcontent">
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\bangalore\culture\art\karnatak finearts.jpg" alt="Art1">
+            <div class="card-text"><h1>karnatak finearts</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\bangalore\culture\art\sandalwood.jpg" alt="Art1">
+            <div class="card-text"><h1>Sandalwood</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\indore\culture\art\warli.jpg" alt="Art1">
+            <div class="card-text"><h1>Warli</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\rishikesh\culture\art\woodcarving.jpg" alt="Art1">
+            <div class="card-text"><h1>Wood carvings</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\rishikesh\culture\art\mural.jpg" alt="Art1">
+            <div class="card-text"><h1>Murals</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\delhi\culture\art\miniature.jpg" alt="Art1">
+            <div class="card-text"><h1>Miniature arts</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+    </div>
+    
+    <div id="Music" class="tabcontent">
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Music</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Music</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Music</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Music</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Music</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Music</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+    </div>
+    
+    <div id="Dance" class="tabcontent">
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Dance</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Dance</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Dance</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Dance</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Dance</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Dance</h1>
+            <h4> Location 1</h4></div>
+        </div>
+    </div>
+    
+    <div id="Food" class="tabcontent">
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Food</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Food</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Food</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Food</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Food</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Food</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+    </div>
+    
+    <div id="Festival" class="tabcontent">
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Festival</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Festival</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Festival</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Festival</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Festival</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static/images/home/images/dance.png" alt="Art1">
+            <div class="card-text"><h1>Festival</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+    </div>
+    
+    <div id="Apparel" class="tabcontent">
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\ahemdabad\culture\apparel\kediya.jpg" alt="Art1">
+            <div class="card-text"><h1>kediya</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\ahemdabad\culture\apparel\saree.jpg" alt="Art1">
+            <div class="card-text"><h1>Saree</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\ahemdabad\culture\apparel\suit.jpg" alt="Art1">
+            <div class="card-text"><h1>Suit</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\amritsar\culture\apparel\salwarkameez.jpg" alt="Art1">
+            <div class="card-text"><h1>Salwar Kameez</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\chennai\culture\apparel\silk.jpg" alt="Art1">
+            <div class="card-text"><h1>Silk</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+       <div class="card" onclick="route()" id="route">
+            <img src="/static\images\jaipur\culture\apparel\lehenga.jpg" alt="Art1">
+            <div class="card-text"><h1>Lehenga</h1>
+            <h4> Location 1</h4></div>
+        </div> 
+    </div>
+    
+    <script src="/static/home.js"></script>
+    
+   
+    
+  
+
+  
+    <script>
+      
+    </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: #000000;
+  }
+ul li a:hover{
+    text-decoration: none;
+    color: #8D1022;
+}
+  
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+figure.card {
+  position: relative;
+  width: 960px;
+  height: 240px;
+  background-image: var(--image-src);
+  background-position: 50% 50%;
+  background-size: 125%;
+  transition: background 400ms ease;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+figure.card:hover figcaption {
+  transform: translateY(0px);
+}
+figure.card--1:hover {
+  background-position: 50% 100%;
+}
+figure.card--1 figcaption {
+  bottom: 0;
+  transform: translateY(80px);
+}
+figure.card--2 {
+  background-size: 110%;
+}
+figure.card--2:hover {
+  background-position: 50% -100%;
+}
+figure.card--2 figcaption {
+  top: 0;
+  transform: translateY(-80px);
+}
+figure.card--3 {
+  background-size: 115%;
+}
+figure.card--3:hover {
+  background-position: -100% 50%;
+}
+figure.card--3 figcaption {
+  left: 0;
+  transform: translateX(-180px);
+}
+figure.card--4:hover {
+  background-position: 100% 50%;
+}
+figure.card--4 figcaption {
+  right: 0;
+  transform: translateX(180px);
+}
+figure.card--1 figcaption, figure.card--2 figcaption {
+  width: 5000px;
+  height: 80px;
+  padding: 15px 20px;
+ 
+}
+figure.card--3 figcaption, figure.card--4 figcaption {
+  flex-direction: column;
+  width: 180px;
+  height: 100%;
+  padding: 20px 15px;
+}
+figure.card figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background: #8d102375;
+  transition: transform 400ms ease;
+}
+figure.card figcaption .info {
+  color: #e2e2e2;
+  font-family: "Montserrat";
+}
+figure.card figcaption .info h3 {
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+figure.card figcaption .info span {
+  color: #000000;
+  font-size: 1rem;
+
+}
+figure.card figcaption .links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+figure.card figcaption .links a {
+  text-decoration: none;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  opacity: 0.65;
+  border-radius: 50%;
+  overflow: hidden;
+}
+figure.card figcaption .links a:hover {
+  opacity: 1;
+}
+figure.card figcaption .links a:focus {
+  outline: none;
+}
+figure.card figcaption .links a:focus::after {
+  transform: scale(1);
+  opacity: 1;
+}
+figure.card figcaption .links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.05);
+  transform: scale(0.5);
+  z-index: -1;
+  transition: all 150ms ease;
+}
+figure.card img{
+ width:52vw ;
+ height: 440px;
+      }
+
+figure.card figcaption .info span{
+  color: white;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    align-items: start;
+  }
+
+  .container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 80px 0;
+  }
+}
+.support {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+.support a {
+  margin: 0 10px;
+  color: #222;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+}
+.support a:hover {
+  transform: scale(1.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.full{
+    background-color: #490711;
+}
+  /* Navbar container */
+.navbar {
+    position: absolute;
+    background-color: #f8f9fa;
+    padding: 2rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 80%;
+    width: 95.8vw;
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  /* Brand Name */
+.navbar-brand {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #8D1022;
+    text-decoration: none;
+}
+  
+  /* Navigation links */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-link {
+    margin-left: 5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+}
+  
+.nav-link:hover {
+    color: #8D1022;
+}
+  
+  /* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+  
+.search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+  
+.search-button {
+    padding: 0.5rem 1rem;
+    background-color: #8D1022;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.search-button:hover {
+    background-color: #b80923;
+}
+.cityimage { 
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     padding-bottom:30px ;
+     background-image: url(/static/images/ahemdabad/culture/festival/uttrayan.jpg);
+     height: 70vh;
+     background-repeat: no-repeat;
+     background-size: 100% 780px;  
+
+  }
+  
+  
+  .cityimage h1{
+      font-size: 5rem;
+      color:#fcfcfc;   
+  }
+
+  .line{
+    width: 90vw;
+    background-color: #fdfdfd;
+    height: 0.2rem;
+    margin-left: 100px;;
+
+  }
+  .card{
+    background-color: grey;
+    width:1000px;
+    height:300px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 450px;
+  }
+  .card h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color:#fcfcfc;  
+    padding-top: 70px;
+  }
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-block-start: 0;
+  padding-top: 50px;
+ 
+}
+ul li{
+  font-size: 1.5rem;
+  color: #e2e2e2;
+
+}
+ul li a{
+    color: #e2e2e2;
+}
+.back{
+    z-index: 2;
+}
+.mandala-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mandala {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: url('/static/images/culturentrial/back.png'); /* replace with the actual image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.top-left {
+    top: 100px;
+}
+
+.bottom-right {
+    top:600px;
+    left:1400px;
+    transform: rotate(180deg);
+}
